@@ -51,7 +51,7 @@ a {
   /* COLOR */
   --COLOR-01: #0d1b2a;
   --COLOR-02: #d4af37;
-  --COLOR-03: #f7f3e9;
+  --COLOR-03: #c49e85;
   --COLOR-01-01: #1b263b;
   --COLOR-01-02: #415a77;
   --COLOR-EXTRA-01: #ffffff;
@@ -91,6 +91,7 @@ a {
   height: auto;
   object-fit: contain;
   width: clamp(200px, 200px + 1vw, 300px);
+  padding-left: 1rem;
 }
 
 .header ul {
@@ -102,6 +103,15 @@ a {
   margin: 0;
   padding-left: 1rem;
   text-align: left;
+}
+
+.header nav li:nth-child(6) {
+  background-color: var(--COLOR-03);
+  font-weight: 800;
+}
+
+.header nav li:nth-child(6) a:any-link {
+  color: var(--COLOR-EXTRA-01);
 }
 
 /* HAMBURGER NAV: START */
