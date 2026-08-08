@@ -495,7 +495,7 @@ a {
   color: var(--COLOR-EXTRA-01);
   font-size: var(--FONT-SIZE--TEXT);
 }
-@media (min-width: 768px) and (orientation: portrait) {
+@media (min-width: 768px) and (orientation: portrait), (min-width: 1024px) {
   .doctor_info--container01 {
     background-color: rgb(from var(--COLOR-01-02) r g b / 0.2);
     border-radius: 1rem;
@@ -509,6 +509,7 @@ a {
   .doctor_info--box {
     align-self: center;
     text-align: left;
+    padding-bottom: 0;
   }
   .doctor_info--box:nth-child(4) {
     text-align: right;
@@ -517,52 +518,30 @@ a {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
-
   .doctor_info--box--image {
     height: auto;
     width: 45vw;
-    justify-self: center;
+    justify-self: left;
+    border-radius: 1rem;
+    margin-bottom: 0;
+  }
+  .doctor_info--box:nth-child(3) .doctor_info--box--image {
+    justify-self: right;
   }
   .doctor_info--box--title {
-    font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1));
+    font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1.7));
   }
   .doctor_info--box--subtitle {
-    font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0.5));
+    font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0.3));
   }
   .doctor_info--box--text {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.5));
+    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.3));
   }
 }
 
 @media (min-width: 1024px) {
-  .doctor_info--container01 {
-    background-color: rgb(from var(--COLOR-01-02) r g b / 0.2);
-    border-radius: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: minmax(200px, auto);
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    padding: 1rem;
-  }
-  .doctor_info--box {
-    align-self: center;
-    text-align: left;
-  }
-  .doctor_info--box:nth-child(4) {
-    text-align: right;
-  }
-  .doctor_info--box:nth-child(4) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-  .doctor_info--box--image {
-    height: auto;
-    width: 45vw;
-    justify-self: center;
-  }
   .doctor_info--box--title {
-    font-size: var(--FONT-SIZE--TITLE);
+    font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1));
   }
   .doctor_info--box--subtitle {
     font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 1));
