@@ -680,7 +680,7 @@ a {
   margin-bottom: 2rem;
 }
 .doctor_info--container03 .doctor_info--box--subtitle {
-  padding: 0;
+  padding: 0 1rem;
 }
 .doctor_info--container03 .doctor_info--box,
 .doctor_info--container04 .doctor_info--box {
@@ -799,28 +799,50 @@ a {
 /**/
 /* -=+=-=+=-=+=-  03. DOCTOR p4 (Reviews) -=+=-=+=-=+=- */
 /**/
-
-.doctor_info--container04 .doctor_info--box--text {
-  font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0.5));
+.doctor_info--container04 {
+  margin: 0;
+}
+.doctor_info--container04 .doctor_info--box {
+  margin: 0;
+  padding: 0;
+}
+.doctor_info--reviews {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(1, 1fr);
+  min-height: 100px;
+  padding: 0 1rem 1rem;
 }
 
-/* .doctor_info--reviews {
-}
 .doctor_info--reviews--card {
-}
-
-.doctor_info--reviews--card--title {
-}
-
-.doctor_info--reviews--card--user {
+  background-color: var(--COLOR-EXTRA-01);
+  border-radius: 20px;
+  box-shadow: var(--SHADOWS);
+  padding: 1rem;
 }
 .doctor_info--reviews--card--user--rate {
+  font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0));
+  color: var(--COLOR-02);
 }
-.doctor_info--reviews--card--user--role {
+.doctor_info--reviews--card--user--title {
+  font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1.5));
+  font-weight: var(--FONT-BOLD);
 }
 
 .doctor_info--reviews--card--user--comment {
-} */
+  font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0));
+}
+
+.doctor_info--reviews--card--user {
+  font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.1));
+  font-weight: var(--FONT-BOLD);
+}
+.doctor_info--reviews--card--user--role {
+  font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0.5));
+  font-weight: var(--FONT-NORMAL);
+  color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.5);
+}
 
 /**/
 /* -=+=-=+=-=+=-  WHATSAPP FLOATING ICON -=+=-=+=-=+=- */
