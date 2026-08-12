@@ -820,7 +820,24 @@ a {
   border-radius: 20px;
   box-shadow: var(--SHADOWS);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+
+.doctor_info--reviews--card--title {
+  position: relative;
+}
+
+.doctor_info--reviews--card--google {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  display: block;
+}
+
 .doctor_info--reviews--card--user--rate {
   font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0));
   color: var(--COLOR-02);
@@ -828,6 +845,8 @@ a {
 .doctor_info--reviews--card--user--title {
   font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1.5));
   font-weight: var(--FONT-BOLD);
+  line-height: 1.25;
+  min-height: calc(2 * 1.25em);
 }
 
 .doctor_info--reviews--card--user--comment {
@@ -837,11 +856,18 @@ a {
 .doctor_info--reviews--card--user {
   font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.1));
   font-weight: var(--FONT-BOLD);
+  margin-top: auto;
 }
 .doctor_info--reviews--card--user--role {
+  color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.6);
   font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0.5));
   font-weight: var(--FONT-NORMAL);
-  color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.6);
+}
+
+@media (min-width: 1024px) {
+  .doctor_info--reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /**/
