@@ -832,10 +832,15 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 1.5rem;
-  height: 1.5rem;
-  object-fit: contain;
+  width: clamp(1.25rem, 1.5vw, 1.75rem);
+  height: clamp(1.25rem, 1.5vw, 1.75rem);
   display: block;
+}
+.doctor_info--reviews--card--google img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .doctor_info--reviews--card--user--rate {
