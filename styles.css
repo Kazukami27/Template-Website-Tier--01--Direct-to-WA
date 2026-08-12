@@ -841,7 +841,7 @@ a {
 .doctor_info--reviews--card--user--role {
   font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0.5));
   font-weight: var(--FONT-NORMAL);
-  color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.5);
+  color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.6);
 }
 
 /**/
