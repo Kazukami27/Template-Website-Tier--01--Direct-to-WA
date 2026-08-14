@@ -953,6 +953,9 @@ a {
 /**/
 /* -=+=-=+=-=+=-  04. LOCATION -=+=-=+=-=+=- */
 /**/
+.location--container {
+  border-bottom: var(--BORDER-HEAVY); padding: 0 0 2rem 0;
+}
 
 .location_header {
   padding: 1.5rem 1rem 1rem;
@@ -972,6 +975,10 @@ a {
 
 .location_body--container {
   padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1rem;
 }
 .location_body--container ul {
   display: flex;
@@ -987,7 +994,9 @@ a {
   text-align: left;
   gap: 0.75rem;
 }
-
+.location_body--container ul li:nth-child(2) {
+  color: var(--COLOR-03);
+}
 .location_body--container img {
   display: block;
   height: 2rem;
@@ -1006,12 +1015,23 @@ a {
 .location_body_container--map {
   border-radius: 12px;
   box-shadow: var(--SHADOWS);
-  margin: 2rem 1rem;
   overflow: hidden;
+  height: 100%;
+  align-self: center;
 }
 .location_body_container--map iframe {
-  height: 50vw;
+  min-height: 200px;
+  height: 100%;
   width: 100%;
+}
+
+@media (min-width: 768px), (min-width: 1024px) {
+  .location_body--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+  }
 }
 
 /**/
