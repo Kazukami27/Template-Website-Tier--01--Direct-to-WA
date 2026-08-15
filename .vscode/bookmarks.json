@@ -6,12 +6,37 @@
 				{
 					"line": 50,
 					"column": 0,
-					"label": "@ROOT"
+					"label": "C: @ROOT"
 				},
 				{
-					"line": 953,
+					"line": 112,
 					"column": 0,
-					"label": ""
+					"label": "C: HEADER"
+				},
+				{
+					"line": 279,
+					"column": 0,
+					"label": "C: HERO"
+				},
+				{
+					"line": 391,
+					"column": 0,
+					"label": "C: SERVICE"
+				},
+				{
+					"line": 568,
+					"column": 0,
+					"label": "C: DOCTOR"
+				},
+				{
+					"line": 962,
+					"column": 0,
+					"label": "C: LOCATION"
+				},
+				{
+					"line": 1047,
+					"column": 0,
+					"label": "C: FOOTER"
 				}
 			]
 		},
@@ -19,24 +44,34 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
+					"line": 16,
+					"column": 0,
+					"label": "H: HEADER"
+				},
+				{
 					"line": 66,
 					"column": 0,
-					"label": "01. HERO"
+					"label": "H: HERO"
 				},
 				{
 					"line": 93,
 					"column": 0,
-					"label": "02. SERVICES"
+					"label": "H: SERVICES"
 				},
 				{
 					"line": 251,
 					"column": 0,
-					"label": "03. DOCTOR"
+					"label": "H: DOCTOR"
 				},
 				{
 					"line": 575,
 					"column": 0,
-					"label": "04.. LOCATION"
+					"label": "H: LOCATION"
+				},
+				{
+					"line": 748,
+					"column": 0,
+					"label": "H: FOOTER"
 				}
 			]
 		}
