@@ -1086,6 +1086,38 @@ a {
 .footer_container-card-03-underline {
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0));
+  }
+  .footer br {
+    display: none;
+  }
+  .footer p {
+    margin: 0;
+  }
+  .footer_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer_container-card-01 {
+    grid-row: span 2;
+    justify-self: left;
+    padding-left: 2rem;
+  }
+  .footer_container-card-02 {
+    align-self: flex-end;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  .footer_container-card-03 {
+    align-self: flex-start;
+    padding-right: 2rem;
+    text-align: right;
+  }
+}
+
 /**/
 /* -=+=-=+=-=+=-  WHATSAPP FLOATING ICON -=+=-=+=-=+=- */
 /**/
