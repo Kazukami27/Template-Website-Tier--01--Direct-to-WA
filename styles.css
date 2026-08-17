@@ -502,8 +502,9 @@ a {
   font-weight: var(--FONT-BOLD);
   height: 50px;
   justify-content: center;
+  padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 350px + 1vw, 100%);
+  width: clamp(250px, 250px + 1vw);
 }
 .service_footer_contact--link a:any-link {
   color: var(--COLOR-EXTRA-01);
@@ -931,8 +932,9 @@ a {
   font-weight: var(--FONT-BOLD);
   height: 50px;
   justify-content: center;
+  padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 350px + 1vw, 100%);
+  width: clamp(250px, 250px + 1vw);
 }
 .doctor_footer_contact--link a:any-link {
   color: var(--COLOR-EXTRA-01);
@@ -1049,7 +1051,7 @@ a {
 /**/
 
 .footer {
-  margin: 1rem 5%;
+  margin: 1rem 2%;
   color: var(--COLOR-EXTRA-01);
   font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 1));
 }
@@ -1087,7 +1089,7 @@ a {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer {
     font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0));
   }
