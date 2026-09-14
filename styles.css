@@ -485,6 +485,7 @@ a {
   transform: scale(1.02);
   box-shadow: var(--GLOW);
   background-color: var(--COLOR-02);
+  border-radius: 20px;
 }
 .service_body_box :is(:hover, :focus) {
   transform: none;
