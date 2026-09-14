@@ -120,7 +120,7 @@ a {
 
   /* ANIMATION */
   --ANIMATION-01-SLIDE: slideup 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  --ANIMATION-02-FADE: fadein 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  --ANIMATION-02-FADE: fadein 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /**/
@@ -445,6 +445,7 @@ a {
 }
 
 .service_body {
+  align-items: stretch;
   display: grid;
   gap: 1.5rem;
   grid-auto-rows: minmax(200px, auto);
@@ -455,12 +456,14 @@ a {
 .service_body_box {
   background-color: var(--COLOR-03);
   border-radius: 20px;
-  display: inline-block;
-  padding-bottom: 1.5rem;
-  text-align: center;
   box-shadow: var(--SHADOWS);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
   min-width: 0;
   overflow: hidden;
+  padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* ANIMATION */
