@@ -153,8 +153,9 @@ a {
   box-shadow: var(--SHADOWS);
 }
 
-.header nav li:nth-child(6) a:any-link {
+.header nav li:nth-child(5) a:any-link {
   color: var(--COLOR-EXTRA-01);
+  transform: none;
 }
 
 /* HAMBURGER NAV: START */
@@ -428,7 +429,7 @@ a {
   border-radius: 20px 20px 0 0;
   height: auto;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 0.5rem;
 }
 .service_body_box--title {
