@@ -136,6 +136,10 @@ a {
   --FONT-SIZE--SUBTITLE: 1.618rem;
   --FONT-SIZE--TEXT: 1rem;
 
+  --FONT-SIZE--TITLE--NOREM: 2.618;
+  --FONT-SIZE--SUBTITLE--NOREM: 1.618;
+  --FONT-SIZE--TEXT--NOREM: 1;
+
   --FONT-STYLE-01: Verdana, Geneva, Tahoma, sans-serif;
   --FONT-HEIGHT: 1.618;
   --FONT-INDENT: 2em;
@@ -425,36 +429,36 @@ a {
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .home--body--title {
-    font-size: calc(var(--FONT-SIZE--TITLE) * pow(1.618, 1));
+    font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 1));
   }
   .home--body--subtitle {
-    font-size: calc(var(--FONT-SIZE--TITLE) * pow(1.618, 0));
+    font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 0));
   }
   .home--body--contact {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1));
     height: 45px;
     width: clamp(300px, 300px + 1vw, 500px);
   }
   .home--body--text {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1));
   }
 }
 
 @media (min-width: 1024px) {
   .home--body--title {
-    font-size: calc(var(--FONT-SIZE--TITLE) * pow(1.618, 1.5));
+    font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 1.5));
   }
 
   .home--body--subtitle {
-    font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 1.5));
+    font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 1.5));
   }
   .home--body--contact {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1.5));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1.5));
     height: 60px;
     width: clamp(450px, 450px + 1vw, 500px);
   }
   .home--body--text {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1.5));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1.5));
   }
 }
 
@@ -536,7 +540,7 @@ a {
 }
 .service_body_box--text {
   color: var(--COLOR-EXTRA-01);
-  font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618));
   margin: 0;
   padding: 0.5rem;
 }
@@ -590,7 +594,7 @@ a {
   justify-content: center;
   padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 250px + 1vw);
+  width: clamp(200px, 200px + 1vw, 300px);
   margin-bottom: 1rem;
 }
 .service_footer_contact--download {
@@ -606,7 +610,7 @@ a {
   justify-content: center;
   padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 250px + 1vw);
+  width: clamp(200px, 200px + 1vw, 300px);
 }
 .service_footer_contact img {
   display: inline;
@@ -631,19 +635,19 @@ a {
 
 @media (min-width: 768px) and (orientation: portrait) {
   .service_header--title {
-    font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0.5));
+    font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 0.5));
   }
   .service_header--subtitle {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.5));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 0.5));
   }
   .service_body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .service_body_box--title {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1));
   }
   .service_body_box--text {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.5));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 0.5));
   }
 }
 
@@ -659,10 +663,10 @@ a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .service_body_box--title {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1));
   }
   .service_body_box--text {
-    font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.5));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 0.5));
   }
 
   .service_footer_contact--text {
@@ -682,8 +686,10 @@ a {
   .service_footer_contact--text {
     grid-column: span 2;
   }
+
+  .service_footer_contact--download,
   .service_footer_contact--link {
-    margin-bottom: 0;
+    width: clamp(250px, 250px + 5vw, 500px);
   }
 }
 
@@ -728,7 +734,7 @@ a {
 }
 .doctor_info--box--title {
   color: var(--COLOR-03);
-  font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 2));
+  font-size: calc(1rem * var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 2));
   font-weight: var(--FONT-NORMAL);
   text-decoration: underline;
 }
@@ -772,23 +778,23 @@ a {
   }
   .doctor_info--box--title {
     font-size: clamp(
-      calc(var(--FONT-SIZE--TITLE) / pow(1.618, 2)),
+      calc(1rem * var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 2)),
       1.5vw,
-      (var(--FONT-SIZE--TITLE) / pow(1.618, 1))
+      (var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 1))
     );
   }
   .doctor_info--box--subtitle {
     font-size: clamp(
-      calc(var(--FONT-SIZE--SUBTITLE)),
+      calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM)),
       3vw,
-      calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 1))
+      calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 1))
     );
   }
   .doctor_info--box--text {
     font-size: clamp(
       var(--FONT-SIZE--TEXT),
       2vw,
-      calc(var(--FONT-SIZE--TEXT) * pow(1.618, 1))
+      calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 1))
     );
   }
 }
@@ -912,7 +918,7 @@ a {
 
 /* .doctor_info--why--check {
   color: var(--COLOR-03);
-  font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0.5));
+  font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE-NOREM) * pow(1.618, 0.5));
 } */
 
 @media (min-width: 768px) and (orientation: portrait), (min-width: 1024px) {
@@ -959,6 +965,9 @@ a {
 .doctor_info--reviews--card--title {
   position: relative;
 }
+.doctor_info--reviews--card--title h2 {
+  margin: 0;
+}
 
 .doctor_info--reviews--card--google {
   position: absolute;
@@ -976,28 +985,28 @@ a {
 }
 
 .doctor_info--reviews--card--user--rate {
-  font-size: calc(var(--FONT-SIZE--SUBTITLE) * pow(1.618, 0));
+  font-size: calc(1rem * var(--FONT-SIZE--SUBTITLE--NOREM) * pow(1.618, 0));
   color: var(--COLOR-02);
 }
 .doctor_info--reviews--card--user--title {
-  font-size: calc(var(--FONT-SIZE--TITLE) / pow(1.618, 1.5));
+  font-size: calc(1rem * var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 1.5));
   font-weight: var(--FONT-BOLD);
   line-height: 1.25;
   min-height: calc(2 * 1.25em);
 }
 
 .doctor_info--reviews--card--user--comment {
-  font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 0));
 }
 
 .doctor_info--reviews--card--user {
-  font-size: calc(var(--FONT-SIZE--TEXT) * pow(1.618, 0.1));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) * pow(1.618, 0.1));
   font-weight: var(--FONT-BOLD);
   margin-top: auto;
 }
 .doctor_info--reviews--card--user--role {
   color: rgb(from var(--COLOR-EXTRA-02) r g b / 0.6);
-  font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0.5));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618, 0.5));
   font-weight: var(--FONT-NORMAL);
 }
 
@@ -1059,7 +1068,7 @@ a {
   justify-content: center;
   padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 250px + 1vw);
+  width: clamp(200px, 200px + 1vw, 300px);
   margin-bottom: 1rem;
 }
 .doctor_footer_contact--download {
@@ -1075,8 +1084,9 @@ a {
   justify-content: center;
   padding: 0 1.5rem;
   text-wrap: nowrap;
-  width: clamp(250px, 250px + 1vw);
+  width: clamp(200px, 200px + 1vw, 300px);
 }
+
 .doctor_footer_contact a:any-link {
   color: var(--COLOR-EXTRA-01);
 }
@@ -1112,6 +1122,7 @@ a {
   .doctor_footer_contact--download {
     font-size: var(--FONT-SIZE--SUBTITLE);
     margin-bottom: 0;
+    width: clamp(250px, 250px + 5vw, 500px);
   }
 }
 
@@ -1188,7 +1199,7 @@ a {
 
 .location_body_container--item--time--slot {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1223,7 +1234,7 @@ a {
 .footer {
   margin: 1rem 2%;
   color: var(--COLOR-EXTRA-01);
-  font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 1));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618, 1));
 }
 .footer_container {
   align-items: center;
@@ -1261,7 +1272,7 @@ a {
 
 @media (min-width: 769px) {
   .footer {
-    font-size: calc(var(--FONT-SIZE--TEXT) / pow(1.618, 0));
+    font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618, 0));
   }
   .footer br {
     display: none;
