@@ -672,10 +672,6 @@ a {
   .service_footer_contact--text {
     font-size: var(--FONT-SIZE--TITLE);
   }
-  .service_footer_contact--link,
-  .service_footer_contact--download {
-    font-size: var(--FONT-SIZE--SUBTITLE);
-  }
 
   .service_footer_contact {
     display: grid;
@@ -686,10 +682,14 @@ a {
   .service_footer_contact--text {
     grid-column: span 2;
   }
-
-  .service_footer_contact--download,
   .service_footer_contact--link {
-    width: clamp(250px, 250px + 5vw, 500px);
+    margin-bottom: 0;
+  }
+
+  .service_footer_contact--link,
+  .service_footer_contact--download {
+    font-size: var(--FONT-SIZE--SUBTITLE);
+    width: clamp(250px, 250px + 5vw, 350px);
   }
 }
 
@@ -1122,7 +1122,7 @@ a {
   .doctor_footer_contact--download {
     font-size: var(--FONT-SIZE--SUBTITLE);
     margin-bottom: 0;
-    width: clamp(250px, 250px + 5vw, 500px);
+    width: clamp(250px, 250px + 5vw, 350px);
   }
 }
 
