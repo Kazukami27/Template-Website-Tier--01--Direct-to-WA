@@ -58,6 +58,58 @@ a {
 }
 
 /**/
+/* -=+=-=+=-=+=-  ANIMATION -=+=-=+=-=+=- */
+/**/
+
+/* HOME */
+.ANIMATION-00-HOME {
+  animation: var(--ANIMATION-01-SLIDE);
+}
+@keyframes slideup {
+  from {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* SLIDE UP */
+.ANIMATION-01-SLIDE.is-visible {
+  animation: var(--ANIMATION-01-SLIDE);
+}
+@keyframes slideup {
+  from {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* FADE IN */
+.ANIMATION-02-FADE {
+  overflow: hidden;
+  opacity: 0;
+}
+.ANIMATION-02-FADE.is-visible {
+  animation: var(--ANIMATION-02-FADE);
+  animation-delay: calc(var(--fade) * 0.1s);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**/
 /* -=+=-=+=-=+=-  ROOTS FOR VAR -=+=-=+=-=+=- */
 /**/
 
@@ -119,8 +171,8 @@ a {
     inset 0 1px 1px rgb(255 255 255 / 40%);
 
   /* ANIMATION */
-  --ANIMATION-01-SLIDE: slideup 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  --ANIMATION-02-FADE: fadein 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  --ANIMATION-01-SLIDE: slideup 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  --ANIMATION-02-FADE: fadein 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /**/
@@ -329,18 +381,7 @@ a {
   align-content: center;
   justify-items: center;
   transform: translateY(150%);
-  animation: var(--ANIMATION-01-SLIDE);
   opacity: 0;
-}
-@keyframes slideup {
-  from {
-    transform: translateY(150%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 /**/
 
@@ -467,23 +508,6 @@ a {
 }
 
 /* ANIMATION */
-.scroll-animation {
-  overflow: hidden;
-  opacity: 0;
-}
-.scroll-animation.is-visible {
-  animation: var(--ANIMATION-02-FADE);
-  animation-delay: calc(var(--fade) * 0.1s);
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .service_body :is(:hover, :focus) {
   transform: scale(1.02);
   box-shadow: var(--GLOW);
@@ -494,7 +518,7 @@ a {
   transform: none;
   box-shadow: none;
 }
-/* */
+/**/
 
 .service_body_box--image {
   border-radius: 20px 20px 0 0;
@@ -673,11 +697,12 @@ a {
 }
 
 .doctor_info--container01,
-.doctor_info--container02,
-.doctor_info--container04 {
+.doctor_info--container02 {
   background-color: var(--COLOR-02-04);
   border: 2px solid var(--COLOR-02);
   margin-bottom: 2rem;
+  transform: translateY(40%);
+  opacity: 0;
 }
 
 .doctor_info--box {
@@ -904,6 +929,9 @@ a {
 /**/
 
 .doctor_info--container04 {
+  background-color: var(--COLOR-02-04);
+  border: 2px solid var(--COLOR-02);
+  margin-bottom: 2rem;
   margin: 0;
 }
 .doctor_info--container04 .doctor_info--box {

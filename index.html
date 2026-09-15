@@ -68,7 +68,7 @@
 
       <section id="home" class="home home--container">
         <div class="home--body">
-          <div class="home--body--box">
+          <div class="home--body--box ANIMATION-00-HOME">
             <h1 class="home--body--title">Kazu Dental</h1>
             <p class="home--body--subtitle">Gigi Sakit tapi Bingung Kenapa?</p>
             <div class="home--body--contact">
@@ -104,7 +104,7 @@
         </div>
 
         <div class="service_body">
-          <div class="scroll-animation" style="--fade: 1">
+          <div class="ANIMATION-02-FADE" style="--fade: 1">
             <!-- Service List 1 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -122,7 +122,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 2">
+          <div class="ANIMATION-02-FADE" style="--fade: 2">
             <!-- Service List 2 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -140,7 +140,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 3">
+          <div class="ANIMATION-02-FADE" style="--fade: 3">
             <!-- Service List 3 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -158,7 +158,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 4">
+          <div class="ANIMATION-02-FADE" style="--fade: 4">
             <!-- Service List 4 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -176,7 +176,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 5">
+          <div class="ANIMATION-02-FADE" style="--fade: 5">
             <!-- Service List 5 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -194,7 +194,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 6">
+          <div class="ANIMATION-02-FADE" style="--fade: 6">
             <!-- Service List 6 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -212,7 +212,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 7">
+          <div class="ANIMATION-02-FADE" style="--fade: 7">
             <!-- Service List 7 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -230,7 +230,7 @@
             </div>
           </div>
 
-          <div class="scroll-animation" style="--fade: 8">
+          <div class="ANIMATION-02-FADE" style="--fade: 8">
             <!-- Service List 8 -->
             <div tabindex="0" role="button" class="service_body_box">
               <img
@@ -297,7 +297,7 @@
       <section id="doctor" class="doctor--container">
         <!-- A. Doctor Place -->
 
-        <div class="doctor_info--container01">
+        <div class="doctor_info--container01 ANIMATION-01-SLIDE">
           <div class="doctor_info--box">
             <img
               src="IMAGES/DOCTOR/DOCTOR-01--PLACE--1080x1080.webp"
@@ -385,7 +385,7 @@
 
         <!-- C. Doctor Profile -->
 
-        <div class="doctor_info--container02">
+        <div class="doctor_info--container02 ANIMATION-01-SLIDE">
           <div class="doctor_info--box">
             <img
               src="IMAGES/DOCTOR/DOCTOR-02--PROFILE--1080x1080.webp"
@@ -474,7 +474,10 @@
 
           <div class="doctor_info--reviews">
             <!-- Review 01 -->
-            <article class="doctor_info--reviews--card">
+            <article
+              class="doctor_info--reviews--card ANIMATION-02-FADE"
+              style="--fade: 1"
+            >
               <div class="doctor_info--reviews--card--title">
                 <div class="doctor_info--reviews--card--user--rate">
                   &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -512,7 +515,10 @@
             </article>
 
             <!-- Review 02 -->
-            <article class="doctor_info--reviews--card">
+            <article
+              class="doctor_info--reviews--card ANIMATION-02-FADE"
+              style="--fade: 2"
+            >
               <div class="doctor_info--reviews--card--title">
                 <div class="doctor_info--reviews--card--user--rate">
                   &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -549,7 +555,10 @@
             </article>
 
             <!-- Review 03 -->
-            <article class="doctor_info--reviews--card">
+            <article
+              class="doctor_info--reviews--card ANIMATION-02-FADE"
+              style="--fade: 3"
+            >
               <div class="doctor_info--reviews--card--title">
                 <div class="doctor_info--reviews--card--user--rate">
                   &#9733;&#9733;&#9733;&#9733;&#9733;
@@ -835,7 +844,9 @@
     </footer>
 
     <script>
-      const animatedElements = document.querySelectorAll(".scroll-animation");
+      const animatedElements = document.querySelectorAll(
+        ".ANIMATION-01-SLIDE, .ANIMATION-02-FADE",
+      );
 
       const observer = new IntersectionObserver(
         (entries, observer) => {
@@ -849,7 +860,7 @@
         },
         {
           threshold: 0,
-          rootMargin: "0px 0px 200px 0px",
+          rootMargin: "0px 0px 100px 0px",
         },
       );
 
