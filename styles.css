@@ -540,7 +540,7 @@ a {
 }
 .service_body_box--text {
   color: var(--COLOR-EXTRA-01);
-  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618));
+  font-size: calc(1rem * var(--FONT-SIZE--TEXT--NOREM) / pow(1.618, 0));
   margin: 0;
   padding: 0.5rem;
 }
