@@ -59,32 +59,32 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 36,
+					"line": 21,
 					"column": 0,
 					"label": "H: HEADER"
 				},
 				{
-					"line": 85,
+					"line": 70,
 					"column": 0,
 					"label": "H: HERO"
 				},
 				{
-					"line": 114,
+					"line": 99,
 					"column": 0,
 					"label": "H: SERVICES"
 				},
 				{
-					"line": 359,
+					"line": 344,
 					"column": 0,
 					"label": "H: DOCTOR"
 				},
 				{
-					"line": 732,
+					"line": 717,
 					"column": 0,
 					"label": "H: LOCATION"
 				},
 				{
-					"line": 923,
+					"line": 908,
 					"column": 0,
 					"label": "H: FOOTER"
 				}
