@@ -1179,6 +1179,21 @@ a {
 
 /**/
 
+.location_body_container--item--time {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.location_body_container--item--time--slot {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/**/
+
 .location_body_container--map {
   border-radius: 12px;
   box-shadow: var(--SHADOWS);
