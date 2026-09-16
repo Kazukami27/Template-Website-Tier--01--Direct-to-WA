@@ -59,6 +59,11 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
+					"line": 8,
+					"column": 0,
+					"label": "H: META"
+				},
+				{
 					"line": 49,
 					"column": 0,
 					"label": "H: HEADER"
@@ -87,11 +92,6 @@
 					"line": 936,
 					"column": 0,
 					"label": "H: FOOTER"
-				},
-				{
-					"line": 9,
-					"column": 1,
-					"label": ""
 				}
 			]
 		}
