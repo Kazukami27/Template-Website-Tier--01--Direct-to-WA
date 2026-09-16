@@ -59,32 +59,37 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 34,
+					"line": 8,
+					"column": 0,
+					"label": "H: META"
+				},
+				{
+					"line": 32,
 					"column": 0,
 					"label": "H: HEADER"
 				},
 				{
-					"line": 83,
+					"line": 81,
 					"column": 0,
 					"label": "H: HERO"
 				},
 				{
-					"line": 112,
+					"line": 110,
 					"column": 0,
 					"label": "H: SERVICES"
 				},
 				{
-					"line": 357,
+					"line": 355,
 					"column": 0,
 					"label": "H: DOCTOR"
 				},
 				{
-					"line": 730,
+					"line": 728,
 					"column": 0,
 					"label": "H: LOCATION"
 				},
 				{
-					"line": 921,
+					"line": 919,
 					"column": 0,
 					"label": "H: FOOTER"
 				}
