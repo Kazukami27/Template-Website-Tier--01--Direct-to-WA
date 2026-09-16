@@ -780,7 +780,7 @@ a {
     font-size: clamp(
       calc(1rem * var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 2)),
       1.5vw,
-      (var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 1))
+      calc(1rem * var(--FONT-SIZE--TITLE--NOREM) / pow(1.618, 1))
     );
   }
   .doctor_info--box--subtitle {
